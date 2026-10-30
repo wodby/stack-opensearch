@@ -21,3 +21,21 @@ services:
         limit:
           cpu: 2000
           memory: 4096
+- name: opensearch-dashboards
+  title: OpenSearch Dashboards
+  service: opensearch-dashboards
+  main: true
+  links:
+  - name: opensearch
+    service: opensearch
+  workloads:
+  - name: main
+    containers:
+    - name: opensearch-dashboards
+      resources:
+        request:
+          cpu: 500
+          memory: 1024
+        limit:
+          cpu: 1000
+          memory: 2048
