@@ -17,12 +17,14 @@ composition for OpenSearch.
 ## Service definitions
 
 - [OpenSearch service](https://github.com/wodby/service-opensearch)
+- [OpenSearch Dashboards service](https://github.com/wodby/service-opensearch-dashboards)
 
 ## What's included
 
 | Component / service | Default configuration |
 | --- | --- |
 | OpenSearch<br>`opensearch` | required; enabled by default; volumes: `data` 20 GB |
+| OpenSearch Dashboards<br>`opensearch-dashboards` | optional; enabled by default; links: `opensearch` → `opensearch` |
 
 Enabled optional services are selected by default but can be excluded when an
 app is created. Disabled optional services are available but not selected by
