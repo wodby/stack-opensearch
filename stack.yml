@@ -1,6 +1,7 @@
 name: opensearch
 title: OpenSearch
 icon: opensearch
+docs: https://wodby.com/docs/2.0/stacks/catalog/opensearch/
 
 services:
 - name: opensearch
